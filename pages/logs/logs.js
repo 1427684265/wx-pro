@@ -5,11 +5,17 @@ Page({
   data: {
     logs: []
   },
-  onLoad: function () {
+  onLoad: function (option) {
+    console.log("log参数未")
+    console.log(option)
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(log => {
         return util.formatTime(new Date(log))
       })
     })
+  },
+  onShow(option){
+    console.log("onshow")
+    console.log(option)
   }
 })

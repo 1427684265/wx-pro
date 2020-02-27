@@ -8,6 +8,8 @@
     </block>
   </view>
   <view class="usermotto">
+    <button>确认</button>
+    <icon type="success_no_circle"></icon>
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
