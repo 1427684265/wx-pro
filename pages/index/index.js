@@ -16,6 +16,12 @@ Page({
       url: '../logs/logs?name=raymond&gender=male'
     })
   },
+  // 点击确认
+  bindConfirm() {
+    wx.navigateTo({
+      url: '../logs/example?name=raymond&gender=male'
+    })
+  },
   onPullDownRefresh: function() {
     // 触发下拉刷新时执行
     this.setData({
@@ -56,7 +62,7 @@ Page({
     // tab 点击时执行
     console.log("tab 点击时执行")
   },
-  onLoad: function (option) {
+  onLoad: function(option) {
     // 获取系统信息
     // wx.getSystemInfo({
     //   success: function(res) {

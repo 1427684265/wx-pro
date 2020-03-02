@@ -14,8 +14,7 @@ Page({
       })
     })
   },
-  onShow(option){
+  onShow(){
     console.log("onshow")
-    console.log(option)
   }
 })
